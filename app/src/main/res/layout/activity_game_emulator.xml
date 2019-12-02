@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameEmulatorActivity">
+
+    <GridLayout
+        android:id="@+id/light_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:useDefaultMargins="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            style="@style/LightButton"
+            android:onClick="onLightButtonClick" />
+
+        <Button
+            style="@style/LightButton"
+            android:onClick="onLightButtonClick" />
+
+        <Button
+            style="@style/LightButton"
+            android:onClick="onLightButtonClick" />
+
+        <Button
+            style="@style/LightButton"
+            android:onClick="onLightButtonClick" />
+
+        <Button
+            style="@style/LightButton"
+            android:onClick="onLightButtonClick" />
+
+        <Button
+            style="@style/LightButton"
+            android:onClick="onLightButtonClick" />
+
+        <Button
+            style="@style/LightButton"
+            android:onClick="onLightButtonClick" />
+
+        <Button
+            style="@style/LightButton"
+            android:onClick="onLightButtonClick" />
+
+        <Button
+            style="@style/LightButton"
+            android:onClick="onLightButtonClick" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/vector_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:useDefaultMargins="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            style="@style/LightButton"
+            android:src="@drawable/tic_tac_toe_empty"/>
+
+        <ImageView
+            style="@style/LightButton"
+            android:src="@drawable/tic_tac_toe_empty"/>
+
+        <ImageView
+            style="@style/LightButton"
+            android:src="@drawable/tic_tac_toe_empty"/>
+
+        <ImageView
+            style="@style/LightButton"
+            android:src="@drawable/tic_tac_toe_empty"/>
+
+        <ImageView
+            style="@style/LightButton"
+            android:src="@drawable/tic_tac_toe_empty"/>
+
+        <ImageView
+            style="@style/LightButton"
+            android:src="@drawable/tic_tac_toe_empty"/>
+
+        <ImageView
+            style="@style/LightButton"
+            android:src="@drawable/tic_tac_toe_empty"/>
+
+        <ImageView
+            style="@style/LightButton"
+            android:src="@drawable/tic_tac_toe_empty"/>
+
+        <ImageView
+            style="@style/LightButton"
+            android:src="@drawable/tic_tac_toe_empty"/>
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/game_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        style="@style/MediumLabel"
+        app:layout_constraintBottom_toTopOf="@+id/button_new_game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/light_grid" />
+
+    <Button
+        android:id="@+id/button_new_game"
+        style="@style/GameOptionButton"
+        android:layout_marginBottom="56dp"
+        android:onClick="onNewGameClick"
+        android:text="@string/new_game_bt_label"
+        app:layout_constraintBottom_toTopOf="@+id/developerSignature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/developerSignature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/developer_signature"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

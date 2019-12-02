@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenuActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/developer_signature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/start_game"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:onClick="onStartGameClicked"
+            android:text="@string/start_game" />
+
+        <Button
+            android:id="@+id/scoreboard"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:onClick="onViewScoreboardClicked"
+            android:text="@string/scoreboard" />
+
+        <Button
+            android:id="@+id/player_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSelectPlayer1Clicked"
+            android:text="@string/player_1" />
+
+        <Button
+            android:id="@+id/player_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSelectPlayer2Clicked"
+            android:text="@string/player_2" />
+
+        <Button
+            android:id="@+id/add_player"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:onClick="onAddPlayerClicked"
+            android:text="@string/add_player" />
+        <Button
+            android:id="@+id/delete_player"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:onClick="onDeletePlayerClicked"
+            android:text="@string/delete_player" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/developer_signature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/developer_signature"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
